@@ -4,7 +4,7 @@
 [![run-tests](../../actions/workflows/python-test.yml/badge.svg)](../../actions/workflows/python-test.yml)
 [![docker-publish](../../actions/workflows/docker-publish.yml/badge.svg)](../../actions/workflows/docker-publish.yml)
 
-This is a slight edit to the CICD readme.md file made my JAXSON MITCHELL woot woot!
+This is a slight edit to the CICD readme.md file made my JAXSON MITCHELL woot woot! Here is a second change of mine.
 CI is a software development practice in which incremental code changes are made frequently and reliably. 
 Automated build-and-test steps triggered by CI ensure that code changes being merged into the repository are reliable. 
 The code is then delivered quickly and seamlessly as a part of the CD process.
