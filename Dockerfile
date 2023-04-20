@@ -14,7 +14,7 @@ WORKDIR /cicd/
 
 #  prevents Python from writing .pyc files to disk
 #  ensures that the python output is sent straight to terminal (e.g. your container log) without being first buffered
-ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONDONTWRITEBYTECODE 1/home/jaxson/Desktop/Python/CS399FinalAssignment/cicd/tests/test_main.py
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONPATH=/cicd/src
 CMD ["python3.11", "src/ws.py"]
