@@ -8,7 +8,7 @@ from main import is_odd, is_odd_str
 
 class Test(TestCase):
     def test_is_odd(self):
-        assert not is_odd(1)
+        assert not is_odd(0)
         assert is_odd(1)
         assert not is_odd(2)
 
