@@ -2,19 +2,19 @@
 Test the main module.
 Author: Wolf Paulus (wolf@paulus.com)
 """
-from main import is_odd, is_odd_str
+from main import is_prime, is_prime_str
 
 
-def test_is_odd():
-    assert not is_odd(0)
-    assert is_odd(1)
-    assert not is_odd(2)
+def test_is_prime():
+    assert not is_prime(4)
+    assert is_prime(31)
+    assert not is_prime(1)
 
 
 def test_is_odd_str():
-    assert is_odd_str("0") == "0 is even."
-    assert is_odd_str("1") == "1 is odd."
-    assert is_odd_str("2") == "2 is even."
-    assert is_odd_str("-1") == "Please enter a number."
-    assert is_odd_str("A") == "Please enter a number."
-    assert is_odd_str("") == "Please enter a number."
+    assert is_prime_str("7") == "7 is prime."
+    assert is_prime_str("4") == "4 is composite."
+    assert is_prime_str("1") == "1 is composite."
+    assert is_prime_str("-1") == "Please enter a number."
+    assert is_prime_str("A") == "Please enter a number."
+    assert is_prime_str("") == "Please enter a number."
