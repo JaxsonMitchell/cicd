@@ -11,7 +11,7 @@ def test_is_prime():
     assert not is_prime(1)
 
 
-def test_is_odd_str():
+def test_is_prime_str():
     assert is_prime_str("7") == "7 is prime."
     assert is_prime_str("4") == "4 is composite."
     assert is_prime_str("1") == "1 is composite."

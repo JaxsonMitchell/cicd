@@ -20,16 +20,9 @@ class MyServer(BaseHTTPRequestHandler):
             status = 200
             number = self.path.split("=")[1] if self.path.startswith("/?number=") else ""
             result = f"{number} is {'prime' if is_prime(int(number)) else 'composite'}." if number.isnumeric() else ""
-            if self.headers.get("Content-Type") == "application/json":  # Checks if it's a json request.
-                if number.isnumeric():  # If it's a number
-                    data = {"number": number, "prime": is_prime(number), "label": "erau399"}
-                    status, content = 200, dumps(data)
-                else:
-                    status, content = 400, "Your request sucks."
-            else:
-                with open('./response.html', 'r') as f:
-                    # read the html template and fill in the parameters: path, time and result
-                    content = f.read().format(path=self.path, time=asctime(), result=result)
+            with open('./response.html', 'r') as f:
+                # read the html template and fill in the parameters: path, time and result
+                content = f.read().format(path=self.path, time=asctime(), result=result)
         else:
             status, content = 404, "Not Found"
         self.send_response(status)
