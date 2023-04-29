@@ -21,7 +21,7 @@ def get_health() -> bool:
 def remote_json_check(number: int) -> str:
     url = f"{service_url}{number}"
     print(f"Checking {url}")
-    req = urllib.request.Request(url, headers= {
+    req = urllib.request.Request(url, headers={
         'User-Agent': 'Mozilla/5.0',
         'Accept': 'application/json'})
     with urllib.request.urlopen(req) as response:
