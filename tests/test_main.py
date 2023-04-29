@@ -14,7 +14,7 @@ def test_is_prime():
 def test_is_prime_str():
     assert is_prime_str("7") == "7 is prime."
     assert is_prime_str("4") == "4 is composite."
-    assert is_prime_str("1") == "1 is composite."
+    assert is_prime_str("1") == "1 is wacc"
     assert is_prime_str("-1") == "Please enter a number."
     assert is_prime_str("A") == "Please enter a number."
     assert is_prime_str("") == "Please enter a number."
