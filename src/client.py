@@ -27,6 +27,7 @@ def remote_json_check(number: int) -> str:
     with urllib.request.urlopen(req) as response:
         if response.status != 200:
             raise Exception(f"Error: {response.status}")
+        content = response.read().decode('utf-8')
         my_dict = json.loads(response.read().decode('utf-8'))
         return str(my_dict)
 
