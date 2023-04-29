@@ -20,8 +20,6 @@ def is_prime(num: int) -> bool:
 def is_prime_str(num: str) -> str:
     """Return a string indicating whether num is prime or composite."""
     if num.isnumeric():
-        if int(num) == 1 or int(num) == 0:
-            return f"{num} is wacc"
-        return f"{num} is {'prime' if is_prime(int(num)) else 'composite'}."
+        return f"{num} is {'prime' if is_prime(int(num)) else 'not prime'}."
     else:
         return "Please enter a number."
