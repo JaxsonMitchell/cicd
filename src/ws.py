@@ -5,6 +5,7 @@ Author: Wolf Paulus (https://wolfpaulus.com)
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from time import asctime
 from main import is_prime
+from json import load
 
 hostName = "0.0.0.0"
 serverPort = 8080
